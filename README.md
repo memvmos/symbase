@@ -4,13 +4,16 @@
 Symbase: A Client-Side Symbolic Computing System for Recursive, Emotional, and Visual Logic
 
 🧭 Abstract
+
 Symbase introduces a new model of computing: symbolic-first, recursive logic processing based on editable meaning rather than fixed code. Powered entirely in JavaScript, Symbase enables symbolic operating systems, creative tools, AI agents, and self-evolving UI layers to be built and run in the browser — no backend required.
 
 🔍 Introduction
+
 Most software is built on arithmetic logic: operations like 1+1=2. Symbase challenges this by supporting dual-logic operations such as 1+1=11, treating symbols as mutable, contextual, and recursive.
 This allows symbolic meaning, emotion, geometry, and memory to become computationally active elements — enabling a new kind of computation that is both abstract and dynamic.
 
 🧱 Core System
+
 Symbase operates through three core components:
 
 Layer	Function
@@ -20,6 +23,7 @@ symbolic_logic_engine.js	Core engine. Interprets inputs using glossary and memor
 All components run in the frontend, giving developers full access to modify behavior live.
 
 🔁 Logic Model
+
 Symbase supports:
 
 Arithmetic and symbolic interpretations (e.g., 2 + 2 = 4 and 2 + 2 = 22)
