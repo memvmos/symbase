@@ -17,9 +17,15 @@ This allows symbolic meaning, emotion, geometry, and memory to become computatio
 Symbase operates through three core components:
 
 Layer	Function
-.symglossary	Symbolic rule dictionary. Defines meaning, emotion, and transformations of symbols.
+.symglossary	
+
+Symbolic rule dictionary. Defines meaning, emotion, and transformations of symbols.
 .symchat	Symbolic memory engine. Tracks input history, mood states, and recursive transformations.
-symbolic_logic_engine.js	Core engine. Interprets inputs using glossary and memory to generate symbolic responses and system actions.
+
+symbolic_logic_engine.js
+
+Core engine. Interprets inputs using glossary and memory to generate symbolic responses and system actions.
+
 All components run in the frontend, giving developers full access to modify behavior live.
 
 🔁 Logic Model
