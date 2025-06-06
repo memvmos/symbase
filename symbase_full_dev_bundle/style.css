@@ -1,0 +1,68 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+#overlay {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+#title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+#subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+#download {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #4fc3f7;
+  text-decoration: none;
+  border: 1px solid #4fc3f7;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#download:hover {
+  background: #4fc3f7;
+  color: #0a0a0a;
+}
+
+canvas {
+  display: block;
+}
+
+#footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  z-index: 10;
+}
+
+#footer a {
+  color: #4fc3f7;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}

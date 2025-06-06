@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Symbase Symbolic Logic Demo</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: white;
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    input, button {
+      font-size: 1.2rem;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin: 10px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #4fc3f7;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔣 Symbase Logic Interpreter</h1>
+  <p>Type a symbol (e.g. 🔺, 🌀, 🎭) to get its meaning and logic state:</p>
+  <textarea id="glossary" style="display:none;">
+SYMBOL: 🔺
+MEANING: transform
+STATE: geometric
+
+SYMBOL: 🌀
+MEANING: recursive loop
+STATE: arithmetic
+
+SYMBOL: 🎭
+MEANING: emotional state
+STATE: normative
+  </textarea>
+  <input type="text" id="symbolInput" placeholder="Enter symbol..." />
+  <button onclick="runInterpreter()">Interpret</button>
+  <div id="output"></div>
+
+  <script src="symbolic_logic_engine.js"></script>
+  <script>
+    const glossaryText = document.getElementById("glossary").value;
+    const engine = new SymbolicLogicEngine(glossaryText);
+
+    function runInterpreter() {
+      const symbol = document.getElementById("symbolInput").value.trim();
+      const explanation = engine.explain(symbol);
+      document.getElementById("output").innerText = explanation;
+    }
+  </script>
+</body>
+</html>
